@@ -28,6 +28,7 @@
 
 
 # TODO
+* Learn how to add gif to github
 * Add operator overload for simplifying notation
 * Change drawLine args from int to class Vector
 * Simplyfy (maybe) cube calculations
