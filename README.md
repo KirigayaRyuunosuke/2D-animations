@@ -1,3 +1,56 @@
+                                                            ooo
+                                                      oooooo  o
+                                                oooooo        oo
+                                          oooooo              oo
+                                    oooooo                    o o
+                                oooo                          o o
+                                oo                            o  o
+                                oo                            o  o
+                                o o                           o  o
+                                o o                           o   o
+                                o  o                          o   o
+                                o   o                         o    o
+                                o   o                         o    o
+                                o    o                        o     o
+                                o    o                ooooooooooooooo
+                                o     oooooooooooooooo        o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     o                       o     o
+                                o     oooooooooooooooo        o     o
+                                o    o                ooooooooooooooo
+                                o    o                        o     o
+                                o   o                         o    o
+                                o   o                         o    o
+                                o  o                          o   o
+                                o o                           o   o
+                                o o                           o  o
+                                oo                            o  o
+                                oo                            o  o
+                                oooo                          o o
+                                    oooooo                    o o
+                                          oooooo              oo
+                                                oooooo        oo
+                                                      oooooo  o
+                                                            ooo
+
+
 # TODO
 * Add operator overload for simplifying notation
 * Change drawLine args from int to class Vector
