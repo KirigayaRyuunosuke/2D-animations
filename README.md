@@ -28,13 +28,13 @@ This class is heart of this project. Here we find most important methods like ro
 ### rotate()
 I'm not assuming everyone knows about [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix), so here is some info.
 This functions is implementation os this concept to rotate vector by some angle using precalculated [sin and cos values](#xmathhpp).
-## projectOn()
+### projectOn()
 This methods places our point in char table.
-## scale()
+### scale()
 This is simplest possible implementation of multiplying vector by scalar.
 
 ## class Square
-This class uses 4 [Vectors](#classvector) and their methods to project square on flat matrix.
+This class uses 4 [Vectors](#class-vector) and their methods to project square on flat matrix.
 
 # class Cube
 Finally! Now lets think about some ideas I had during programming this:
@@ -43,4 +43,7 @@ Finally! Now lets think about some ideas I had during programming this:
 * How to add depth to your square?
 
 Well, I kinda cheated. This is cube, but if you think about it, cube is actualy square with third dimension attached to it, so everything that is happening here is rotating square, and on each corner i compute point above and below that corner.
-Ok, but what about depth? Well... If something is more far away from observer it should be smaller, so I calculate how far each corner is from observer point and scale lengh of according edge by *c/distance*, where c is some constant
+
+Ok, but what about depth? Well... If something is more far away from observer it should be smaller, so I calculate how far each corner is from observer point and scale lengh of according edge by *c/distance*, where c is some constant.
+
+Last step is to change our 8 3D points to 8 2D point which is also done by implementing simple matrix calculations, and then project it onto our table and print it out.
