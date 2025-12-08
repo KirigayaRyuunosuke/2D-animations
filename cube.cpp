@@ -133,7 +133,7 @@ private:
 public:
     void scale(double scalar){
         base.scale(scalar);
-        buildingVector.scale(scalar);
+        buildingVector.scale(scalar/2);
         observer.scale(5*scalar);
     }
     void rotate(){
