@@ -27,14 +27,14 @@ This function draws lines in my result char matrix.
 This class is heart of this project. Here we find most important methods like rotate(), scale() and projectOn().
 ### rotate()
 I'm not assuming everyone knows about [rotation matrix](https://en.wikipedia.org/wiki/Rotation_matrix), so here is some info.
-This functions is implementation os this concept to rotate vector by some angle using precalculated [sin and cos values](##Xmath.hpp).
+This functions is implementation os this concept to rotate vector by some angle using precalculated [sin and cos values](##xmathhpp).
 ## projectOn()
 This methods places our point in char table.
 ## scale()
 This is simplest possible implementation of multiplying vector by scalar.
 
 ## class Square
-This class uses 4 [Vectors](##class Vector) and their methods to project square on flat matrix.
+This class uses 4 [Vectors](##classvector) and their methods to project square on flat matrix.
 
 # class Cube
 Finally! Now lets think about some ideas I had during programming this:
