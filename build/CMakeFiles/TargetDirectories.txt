@@ -1,0 +1,3 @@
+/home/franek/Dokumenty/Programowanie/CPP/2D-animations/build/CMakeFiles/prog.dir
+/home/franek/Dokumenty/Programowanie/CPP/2D-animations/build/CMakeFiles/edit_cache.dir
+/home/franek/Dokumenty/Programowanie/CPP/2D-animations/build/CMakeFiles/rebuild_cache.dir

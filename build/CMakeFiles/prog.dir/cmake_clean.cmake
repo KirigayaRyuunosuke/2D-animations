@@ -1,0 +1,19 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/prog.dir/main.cpp.o"
+  "CMakeFiles/prog.dir/main.cpp.o.d"
+  "CMakeFiles/prog.dir/src/matrix4x4.cpp.o"
+  "CMakeFiles/prog.dir/src/matrix4x4.cpp.o.d"
+  "CMakeFiles/prog.dir/src/renderer.cpp.o"
+  "CMakeFiles/prog.dir/src/renderer.cpp.o.d"
+  "CMakeFiles/prog.dir/src/shape.cpp.o"
+  "CMakeFiles/prog.dir/src/shape.cpp.o.d"
+  "CMakeFiles/prog.dir/src/vector4.cpp.o"
+  "CMakeFiles/prog.dir/src/vector4.cpp.o.d"
+  "prog"
+  "prog.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/prog.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

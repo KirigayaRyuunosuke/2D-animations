@@ -1,18 +1,16 @@
-#include <iostream>
-#include <thread>
-#include <chrono>
+#include "src/header.hpp"
 #include "src/Xmath.hpp"
 
 constexpr int TabSize = 101;
 
-void drawLine(char table[TabSize][TabSize], int xa, int ya, int xb, int yb) {
+void drawLine(char table[TabSize/2][TabSize], int xa, int ya, int xb, int yb) {
     double dx = xb - xa;
     double dy = yb - ya;
 
     double steps = std::max(std::abs(dx), std::abs(dy));
 
     if (steps == 0) {
-        if(xa >= 0 && xa < TabSize && ya >= 0 && ya < TabSize)
+        if(xa >= 0 && xa < TabSize && ya >= 0 && ya < TabSize/2)
              table[ya][xa] = 'o';
         return;
     }
@@ -26,7 +24,7 @@ void drawLine(char table[TabSize][TabSize], int xa, int ya, int xb, int yb) {
     for (int i = 0; i <= steps; i++) {
         int rX = Xmath::round(x);
         int rY = Xmath::round(y);
-        table[rY + TabSize/2][rX + TabSize/2] = 'o';
+        table[rY + TabSize/4][rX + TabSize/2] = 'o';
         x += xInc;
         y += yInc;
     }
@@ -55,8 +53,8 @@ public:
         x = xa + xb;
         y = ya + yb;
     }
-    void projectOn(char table[TabSize][TabSize]){
-        table[ TabSize/2 + Xmath::round(y) ][ TabSize/2 + Xmath::round(x) ] = 'X';
+    void projectOn(char table[TabSize/2][TabSize]){
+        table[ TabSize/4 + Xmath::round(y) ][ TabSize/2 + Xmath::round(x) ] = 'X';
     }
     int getX(){
         return Xmath::round(x);
@@ -88,7 +86,7 @@ public:
             vectors[i].rotate();
         }
     }
-    void projectOn(char table[TabSize][TabSize]){
+    void projectOn(char table[TabSize/2][TabSize]){
         for (int i = 0; i < 4 ; i++) {
             if( i == 3 )
                 drawLine(table, vectors[i].getX(), vectors[i].getY(), vectors[0].getX(), vectors[0].getY() );
@@ -139,7 +137,7 @@ public:
     void rotate(){
         base.rotate();
     }
-    void projectOn(char table[TabSize][TabSize]){
+    void projectOn(char table[TabSize/2][TabSize]){
 
         Vector tab[4]{base.getA(),base.getB(),base.getC(),base.getD()};
 
@@ -193,15 +191,15 @@ public:
 };
 
 
-void clearTable(char table[TabSize][TabSize]){
-    for(int i = 0; i < TabSize; i++)
+void clearTable(char table[TabSize/2][TabSize]){
+    for(int i = 0; i < TabSize/2; i++)
         for(int j = 0; j < TabSize; j++)
             table[i][j] = ' ';
 
 }
 
-void printTable(char table[TabSize][TabSize]){
-    for(int i = 0; i < TabSize; i++){
+void printTable(char table[TabSize/2][TabSize]){
+    for(int i = 0; i < TabSize/2; i++){
         for(int j = 0; j < TabSize; j++){
             std::cout << table[i][j];
         }
@@ -214,7 +212,7 @@ void swap(int &a, int &b){
 }
 
 int main(){
-    char table[TabSize][TabSize];
+    char table[TabSize/2][TabSize];
     clearTable(table);
 
     // Square square;
