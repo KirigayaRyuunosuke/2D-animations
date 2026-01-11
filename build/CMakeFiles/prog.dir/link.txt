@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/prog.dir/main.cpp.o CMakeFiles/prog.dir/src/vector4.cpp.o CMakeFiles/prog.dir/src/shape.cpp.o CMakeFiles/prog.dir/src/renderer.cpp.o CMakeFiles/prog.dir/src/matrix4x4.cpp.o -o prog 
